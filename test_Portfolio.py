@@ -5,15 +5,15 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
 driver=webdriver.Chrome()
-
+# @pytest.mark.smoke
 def test_Navigateurl():
     driver.get("https://www.tranktechnologies.com/")
     driver.maximize_window()
     time.sleep(2)
 # Navigateurl()
-
-def test_about_us():
-    driver.find_element(By.XPATH,"//ul[@class='cm-flex-type-2']//a[normalize-space()='About us']").click()
+# @pytest.mark.smoke
+def test_portfolio():
+    driver.find_element(By.XPATH,"//a[normalize-space()='Portfolio']").click()
     driver.back()
-    time.sleep(5)
-# about_us()
+    time.sleep(2)
+# portfolio()

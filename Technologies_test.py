@@ -1,0 +1,191 @@
+import time
+
+import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+driver=webdriver.Chrome()
+
+def test_Navigateurl():
+    driver.get("https://www.tranktechnologies.com/")
+    driver.maximize_window()
+    time.sleep(2)
+# Navigateurl()
+
+def test_Technology():
+    tc=driver.find_element(By.XPATH,'(//li[@class="drop_down"])[2]')
+    actions=ActionChains(driver)
+    actions.move_to_element(tc).perform()
+    time.sleep(2)
+# Technology()
+def test_ecommerce_development():
+    driver.find_element(By.XPATH,"//a[normalize-space()='Magento Development']").click()
+    time.sleep(2)
+    driver.back()
+# ecommerce_development()
+def test_opencart_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Opencart Development']").click()
+    time.sleep(2)
+    driver.back()
+# opencart_development()
+def test_codeigniter_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Codeigniter Development']").click()
+    time.sleep(2)
+    driver.back()
+# codeigniter_development()
+def test_wordpress_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='WordPress Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# wordpress_development()
+def test_big_commerce():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Big Commerce']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# big_commerce()
+def test_shopify_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Shopify Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# shopify_development()
+def test_cscart_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='CS-Cart Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# cscart_development()
+def test_node_js_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Node JS Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# node_js_development()
+def test_nop_commerce():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[contains(text(),'Nop')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# nop_commerce()
+def test_woo_commerce():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Woo Commerce']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# woo_commerce()
+def test_laravel_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Laravel Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# laravel_development()
+def test_prestasop_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Prestashop Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# prestasop_development()
+def test_drupal_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Drupal Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# drupal_development()
+def test_wix_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Wix Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# wix_development()
+def test_joomala_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Joomla Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# joomala_development()
+def test_reactjs_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='React JS Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# reactjs_development()
+def test_expressjs_development():
+    test_Technology()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[normalize-space()='Express JS Development']").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(1)
+# expressjs_development()
+
+def test_mobileapp_development():
+    test_Technology()
+    mad=driver.find_element(By.XPATH,'(//a[@href="https://www.tranktechnologies.com/mobile-app-development-company-in-india"])[1]')
+    actions = ActionChains(driver)
+    actions.move_to_element(mad).perform()
+    time.sleep(2)
+# mobileapp_development()
+def test_reactnativemobileapp_development():
+    # Technology()
+    time.sleep(2)
+    # mobileapp_development()
+    driver.find_element(By.XPATH,"//a[contains(text(),'React Native Mobile')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+# reactnativemobileapp_development()
+# @pytest.mark.smoke
+def test_enterprisemobileapp_development():
+    # Technology()
+    test_mobileapp_development()
+    driver.find_element(By.XPATH,"//a[contains(text(),'Enterprise Mobile App')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+# enterprisemobileapp_development()
+def test_xamarinmobileapp_development():
+    test_mobileapp_development()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[contains(text(),'Xamarin Mobile App')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+def test_kotlinmobileapp_development():
+    test_mobileapp_development()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[contains(text(),'Kotlin Mobile App')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+def test_fluttermobileapp_development():
+    test_mobileapp_development()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[contains(text(),'Flutter Mobile App')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+def test_ionicapp_development():
+    test_mobileapp_development()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[contains(text(),'Ionic App')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+def test_swiftapp_development():
+    test_mobileapp_development()
+    driver.find_element(By.XPATH,"//ul[@class='cm-flex cm-flex-wrap']//a[contains(text(),'Swift App')]").click()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
