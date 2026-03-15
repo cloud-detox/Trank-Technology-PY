@@ -7,8 +7,8 @@
   </head>
   <body>
     <h1 id="title">report.html</h1>
-    <p>Report generated on 04-Jul-2025 at 15:27:03 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
-        v4.1.1</p>
+    <p>Report generated on 22-Feb-2026 at 15:20:38 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
     <div id="environment-header">
       <h2>Environment</h2>
     </div>
@@ -23,8 +23,9 @@
     <template id="template_results-table__body--empty">
       <tbody class="results-table-row">
         <tr id="not-found-message">
-          <td colspan="4">No results found. Check the filters.</th>
+          <td colspan="4">No results found. Check the filters.</td>
         </tr>
+      </tbody>
     </template>
     <template id="template_results-table__tbody">
       <tbody class="results-table-row">
@@ -35,14 +36,14 @@
             <div class="extraHTML"></div>
             <div class="media">
               <div class="media-container">
-                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__nav--left">&lt;</div>
                   <div class="media-container__viewport">
                     <img src="" />
                     <video controls>
                       <source src="" type="video/mp4">
                     </video>
                   </div>
-                  <div class="media-container__nav--right">></div>
+                  <div class="media-container__nav--right">&gt;</div>
                 </div>
                 <div class="media__name"></div>
                 <div class="media__counter"></div>
@@ -61,7 +62,7 @@
         <h2>Summary</h2>
         <div class="additional-summary prefix">
         </div>
-        <p class="run-count">0 test took 0 ms.</p>
+        <p class="run-count">1 test took 00:00:20.</p>
         <p class="filter">(Un)check the boxes to filter the results.</p>
         <div class="summary__reload">
           <div class="summary__reload__button hidden" onclick="location.reload()">
@@ -71,20 +72,22 @@
         <div class="summary__spacer"></div>
         <div class="controls">
           <div class="filters">
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
-            <span class="failed">0 Failed,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">1 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" disabled>
             <span class="passed">0 Passed,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
             <span class="skipped">0 Skipped,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
             <span class="xfailed">0 Expected failures,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
             <span class="xpassed">0 Unexpected passes,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" />
-            <span class="error">2 Errors,</span>
-            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
             <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
           </div>
           <div class="collapse">
             <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
@@ -106,9 +109,8 @@
         </tr>
       </thead>
     </table>
-  </body>
   <footer>
-    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.11.5&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.4.1&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;test_AboutUs.py&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;test_AboutUs.py::collect&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_AboutUs.py::collect&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;test_AboutUs.py:9: in &amp;lt;module&amp;gt;\n    driver.maximize_window()\nC:\\Users\\91941\\AppData\\Roaming\\Python\\Python311\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:496: in maximize_window\n    self.execute(command, None)\nC:\\Users\\91941\\AppData\\Roaming\\Python\\Python311\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:344: in execute\n    self.error_handler.check_response(response)\nC:\\Users\\91941\\AppData\\Roaming\\Python\\Python311\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:229: in check_response\n    raise exception_class(message, screen, stacktrace)\nE   selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nE   from unknown error: web view not found\nE     (Session info: chrome=138.0.7204.51)\nE   Stacktrace:\nE   \tGetHandleVerifier [0x0x7ff6d6ab6f95+76917]\nE   \tGetHandleVerifier [0x0x7ff6d6ab6ff0+77008]\nE   \t(No symbol) [0x0x7ff6d6869dea]\nE   \t(No symbol) [0x0x7ff6d6842191]\nE   \t(No symbol) [0x0x7ff6d68ef83e]\nE   \t(No symbol) [0x0x7ff6d690ff72]\nE   \t(No symbol) [0x0x7ff6d68e8243]\nE   \t(No symbol) [0x0x7ff6d68b1431]\nE   \t(No symbol) [0x0x7ff6d68b21c3]\nE   \tGetHandleVerifier [0x0x7ff6d6d8d2cd+3051437]\nE   \tGetHandleVerifier [0x0x7ff6d6d87923+3028483]\nE   \tGetHandleVerifier [0x0x7ff6d6da58bd+3151261]\nE   \tGetHandleVerifier [0x0x7ff6d6ad185e+185662]\nE   \tGetHandleVerifier [0x0x7ff6d6ad971f+218111]\nE   \tGetHandleVerifier [0x0x7ff6d6abfb14+112628]\nE   \tGetHandleVerifier [0x0x7ff6d6abfcc9+113065]\nE   \tGetHandleVerifier [0x0x7ff6d6aa6c98+10616]\nE   \tBaseThreadInitThunk [0x0x7ffc65b1e8d7+23]\nE   \tRtlUserThreadStart [0x0x7ffc6723c34c+44]\n&#34;}], &#34;test_Verticals.py&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;test_Verticals.py::collect&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test_Verticals.py::collect&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;test_Verticals.py:8: in &amp;lt;module&amp;gt;\n    driver.maximize_window()\nC:\\Users\\91941\\AppData\\Roaming\\Python\\Python311\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:496: in maximize_window\n    self.execute(command, None)\nC:\\Users\\91941\\AppData\\Roaming\\Python\\Python311\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:344: in execute\n    self.error_handler.check_response(response)\nC:\\Users\\91941\\AppData\\Roaming\\Python\\Python311\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:229: in check_response\n    raise exception_class(message, screen, stacktrace)\nE   selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nE   from unknown error: web view not found\nE     (Session info: chrome=138.0.7204.51)\nE   Stacktrace:\nE   \tGetHandleVerifier [0x0x7ff6d6ab6f95+76917]\nE   \tGetHandleVerifier [0x0x7ff6d6ab6ff0+77008]\nE   \t(No symbol) [0x0x7ff6d6869dea]\nE   \t(No symbol) [0x0x7ff6d6842191]\nE   \t(No symbol) [0x0x7ff6d68ef83e]\nE   \t(No symbol) [0x0x7ff6d690ff72]\nE   \t(No symbol) [0x0x7ff6d68e8243]\nE   \t(No symbol) [0x0x7ff6d68b1431]\nE   \t(No symbol) [0x0x7ff6d68b21c3]\nE   \tGetHandleVerifier [0x0x7ff6d6d8d2cd+3051437]\nE   \tGetHandleVerifier [0x0x7ff6d6d87923+3028483]\nE   \tGetHandleVerifier [0x0x7ff6d6da58bd+3151261]\nE   \tGetHandleVerifier [0x0x7ff6d6ad185e+185662]\nE   \tGetHandleVerifier [0x0x7ff6d6ad971f+218111]\nE   \tGetHandleVerifier [0x0x7ff6d6abfb14+112628]\nE   \tGetHandleVerifier [0x0x7ff6d6abfcc9+113065]\nE   \tGetHandleVerifier [0x0x7ff6d6aa6c98+10616]\nE   \tBaseThreadInitThunk [0x0x7ffc65b1e8d7+23]\nE   \tRtlUserThreadStart [0x0x7ffc6723c34c+44]\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.7&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.19045-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;tests/test_tranktechnlogy.py::test_vertical&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_tranktechnlogy.py::test_vertical&#34;, &#34;duration&#34;: &#34;00:00:20&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_tranktechnlogy.py::test_vertical&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:20&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;driver = &amp;lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&amp;quot;e892015b68ae411521adf9a50c42e199&amp;quot;)&amp;gt;\n\n    @pytest.mark.smoke\n    def test_vertical(driver):\n        vertical_locator = verticals_locator(driver)\n&amp;gt;       vertical_locator.trading_submenus_click()\n\ntests\\test_tranktechnlogy.py:7: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\verticals_locator.py:80: in trading_submenus_click\n    self.vertical_mousehover()\npages\\verticals_locator.py:57: in vertical_mousehover\n    self.a.move_to_element(self.Verticals).perform()\nC:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\common\\action_chains.py:93: in perform\n    self.w3c_actions.perform()\nC:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\common\\actions\\action_builder.py:168: in perform\n    self.driver.execute(Command.W3C_ACTIONS, enc)\nC:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:458: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002F430E38C20&amp;gt;\nresponse = {&amp;#x27;status&amp;#x27;: 404, &amp;#x27;value&amp;#x27;: &amp;#x27;{&amp;quot;value&amp;quot;:{&amp;quot;error&amp;quot;:&amp;quot;stale element reference&amp;quot;,&amp;quot;message&amp;quot;:&amp;quot;stale element reference: stale elemen...ff7fccf978c\\\\n\\\\t0x7ff7fccdd794\\\\n\\\\t0x7ff7fccdd946\\\\n\\\\t0x7ff7fccc3457\\\\n\\\\t0x7ffe85f97374\\\\n\\\\t0x7ffe8787cc91\\\\n&amp;quot;}}&amp;#x27;}\n\n    def check_response(self, response: dict[str, Any]) -&amp;gt; None:\n        &amp;quot;&amp;quot;&amp;quot;Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        &amp;quot;&amp;quot;&amp;quot;\n        status = response.get(&amp;quot;status&amp;quot;, None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(&amp;quot;message&amp;quot;, &amp;quot;&amp;quot;)\n        screen: str = response.get(&amp;quot;screen&amp;quot;, &amp;quot;&amp;quot;)\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(&amp;quot;value&amp;quot;, None)\n            if value_json and isinstance(value_json, str):\n                try:\n                    value = json.loads(value_json)\n                    if isinstance(value, dict):\n                        if len(value) == 1:\n                            value = value[&amp;quot;value&amp;quot;]\n                        status = value.get(&amp;quot;error&amp;quot;, None)\n                        if not status:\n                            status = value.get(&amp;quot;status&amp;quot;, ErrorCode.UNKNOWN_ERROR)\n                            message = value.get(&amp;quot;value&amp;quot;) or value.get(&amp;quot;message&amp;quot;)\n                            if not isinstance(message, str):\n                                value = message\n                                message = message.get(&amp;quot;message&amp;quot;)\n                        else:\n                            message = value.get(&amp;quot;message&amp;quot;, None)\n                except ValueError:\n                    pass\n    \n        exception_class: type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(&amp;quot;__&amp;quot;)]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[&amp;quot;value&amp;quot;]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == &amp;quot;&amp;quot; and &amp;quot;message&amp;quot; in value:\n            message = value[&amp;quot;message&amp;quot;]\n    \n        screen = None  # type: ignore[assignment]\n        if &amp;quot;screen&amp;quot; in value:\n            screen = value[&amp;quot;screen&amp;quot;]\n    \n        stacktrace = None\n        st_value = value.get(&amp;quot;stackTrace&amp;quot;) or value.get(&amp;quot;stacktrace&amp;quot;)\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(&amp;quot;\\n&amp;quot;)\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(&amp;quot;lineNumber&amp;quot;, &amp;quot;&amp;quot;)\n                        file = frame.get(&amp;quot;fileName&amp;quot;, &amp;quot;&amp;lt;anonymous&amp;gt;&amp;quot;)\n                        if line:\n                            file = f&amp;quot;{file}:{line}&amp;quot;\n                        meth = frame.get(&amp;quot;methodName&amp;quot;, &amp;quot;&amp;lt;anonymous&amp;gt;&amp;quot;)\n                        if &amp;quot;className&amp;quot; in frame:\n                            meth = f&amp;quot;{frame[&amp;#x27;className&amp;#x27;]}.{meth}&amp;quot;\n                        msg = &amp;quot;    at %s (%s)&amp;quot;\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if &amp;quot;data&amp;quot; in value:\n                alert_text = value[&amp;quot;data&amp;quot;].get(&amp;quot;text&amp;quot;)\n            elif &amp;quot;alert&amp;quot; in value:\n                alert_text = value[&amp;quot;alert&amp;quot;].get(&amp;quot;text&amp;quot;)\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n&amp;gt;       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\nE         (Session info: chrome=145.0.7632.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception\nE       Stacktrace:\nE       Symbols not available. Dumping unresolved backtrace:\nE       \t0x7ff7fccd4435\nE       \t0x7ff7fccd4490\nE       \t0x7ff7fca6d49d\nE       \t0x7ff7fca84b8e\nE       \t0x7ff7fca83290\nE       \t0x7ff7fca760cb\nE       \t0x7ff7fca73e6e\nE       \t0x7ff7fca78534\nE       \t0x7ff7fca785ff\nE       \t0x7ff7fcacfa04\nE       \t0x7ff7fcacebf2\nE       \t0x7ff7fcb20e2a\nE       \t0x7ff7fcaf17ca\nE       \t0x7ff7fcb15728\nE       \t0x7ff7fcab8e38\nE       \t0x7ff7fcab9d23\nE       \t0x7ff7fcfa3b30\nE       \t0x7ff7fcf9e3b8\nE       \t0x7ff7fcfbe72a\nE       \t0x7ff7fccf07e5\nE       \t0x7ff7fccf978c\nE       \t0x7ff7fccdd794\nE       \t0x7ff7fccdd946\nE       \t0x7ff7fccc3457\nE       \t0x7ffe85f97374\nE       \t0x7ffe8787cc91\n\nC:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:232: StaleElementReferenceException\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
     <script>
       (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
@@ -236,10 +238,10 @@ const dom = {
         }
 
         if (collapsed) {
-            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
             resultBody.querySelector('.extras-row').classList.add('hidden')
         } else {
-            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
         }
 
         const media = []
@@ -767,4 +769,5 @@ module.exports = {
 },{}]},{},[4]);
     </script>
   </footer>
+  </body>
 </html>
